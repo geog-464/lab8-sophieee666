@@ -6,9 +6,9 @@
 body {
 	/* these are variables in CSS. Not everyone uses them, but they make quick changes much faster */
 	--main-bkg-color: #000;
-	--bkg-color1: #8CCDFF;	
-	--bkg-color2: #548fbb;
-	--bkg-color3: #8089FF;
+	--bkg-color1: #FFFF99;
+	--bkg-color2: #FFFF99;
+	--bkg-color3: #FFFF99;/* #8089FF; */
 	--nav-title-color: #364d4d;
 	--main-text-color: #364d4d;
 	--link-color: #363EB3;
@@ -16,18 +16,18 @@ body {
 	--hover-color: black;
 	--hover-bg-color: pink;
 	--selection-color: yellow;
-	
+
 	--map-selection-color: #ed8266;
 	--font-multiplier: 1.2;
 	--content-gap: 1em;
 	--item-gap: 0.2em;
 	--default-item-color: rgb(200,200,200);
 	--navheight: 10vh;
-	
+
 	background-color: var(--main-bkg-color);
     box-sizing: border-box;
     z-index: 1;
-    margin: auto 0; 
+    margin: auto 0;
 	height: 100%;
 	font-size: 16px;
 	overflow: hidden;
@@ -63,12 +63,12 @@ button {
 footer {
   	height: 60px;
     width: 80%;
-	font-weight: bold;
+	font-weight: 1;
     text-align: left;
     position: absolute;
     bottom: 0px;
-    left: 0px; 
-	padding: 15px;
+    left: 0px;
+	padding: 0px 0px 0px 10px;
 }
 
 /* main */
@@ -91,35 +91,46 @@ footer {
 }
 
 #splash-item1 {
-	grid-column: 1 / span 2;
-	grid-row: 1 / span 1;
+	grid-column: 1 / span 4;
+	grid-row: 3 / span 1;
 	padding: 15px;
 	border-radius: 10px;
 	background-color: var(--bkg-color1);
 }
 
 #splash-item2 {
-	grid-column: 1 / span 2;
+	grid-column: 1 / span 4;
 	grid-row: 2 / span 1;
-	padding: 15px;
-	background-color: var(--bkg-color2);
+	padding: 0px;
 	border-radius: 10px;
+	background-color: black;
 }
 
 #splash-item3 {
-	grid-column: 1 / span 5;
-	grid-row: 3 / span 1;
+	grid-column: 1 / span 4;
+	grid-row: 4 / span 1;
 	padding: 15px;
 	background-color: var(--bkg-color3);
-	margin-right: 50px;
+	/*margin-right: 50px;*/
+	/*margin-bottom: 100px;*/
+	border-radius: 10px;
+}
+
+#splash-item4 {
+	grid-column: 1 / span 4;
+	grid-row: 5 / span 1;
+	padding: 15px;
+	background-color: var(--bkg-color3);
+	/*margin-right: 50px;*/
 	margin-bottom: 100px;
 	border-radius: 10px;
 }
 
+
 #splash-item5  {
-	grid-column: 3 / span 3;
-	grid-row: 1 / span 2;
-	padding: 15px;
+	grid-column: 1 / span 4;
+	grid-row: 1 / span 1;
+	padding: 15px, 15px, 0px, 15px;
 	/*background-color: var(--bkg-color2);*/
 	/*background-image: url('OPTION2-FOR-ADDING-IMGs.jpg');*/
 	background-position: center;
@@ -128,6 +139,8 @@ footer {
 	border-radius: 10px;
 	transition: 1.5s;
 }
+
+
 
 
 .grid-container {
@@ -270,23 +283,3 @@ a:hover {
   color: rgb(200,200,200);
   font-size: calc(var(--font-multiplier) * 16px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
